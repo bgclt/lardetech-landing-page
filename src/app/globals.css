@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@import "swiper/css";
+@import "swiper/css/effect-fade";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+@import "aos/dist/aos.css";
+
+*{
+  scroll-behavior: smooth;
+}
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 30px;
+  border-radius: 5px;
+  transition: 0.4s;
+  background-color: #3A90DA;
+}
+
+.swiper-wrapper {
+  align-items: center !important;
+}
+
+.swiper-pagination {
+  position: unset !important;
+}
+
+
