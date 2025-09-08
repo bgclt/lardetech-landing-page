@@ -35,7 +35,7 @@ const Footer = () => {
                   type="button"
                   className=" items-center justify-center rounded-xl bg-linear-to-r from-[#3A90DA] to-[#25BBFD] px-4 py-2.5 text-base font-normal text-white shadow-sm hover:text-heading focus:text-heading focus:outline-none focus:ring-2 focus:ring-orange-400/80 lg:inline-flex"
                 >
-                 Say hi
+                  Say hi
                 </button>
               </Link>
             </div>
@@ -64,8 +64,8 @@ const Footer = () => {
               <h2 className="mb-2 text-xl font-bold text-black">Contact</h2>
               <ul className="space-y-1 text-sm text-gray-700">
                 <li>
-                  <a href="tel:+233548433878" className="hover:text-[#376058]">
-                    +233 548 433 878
+                  <a href="tel:+233598532978" className="hover:text-[#376058]">
+                    +233 598 532 978
                   </a>
                 </li>
                 <li>

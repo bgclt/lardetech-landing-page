@@ -20,6 +20,7 @@ const servicesData = [
       "DevOps Automation & CI/CD Pipelines",
       "Cloud Security & Compliance",
       "MLOps & LLOps",
+      "Backup and Disaster Recovery"
     ],
   },
   {
@@ -27,7 +28,7 @@ const servicesData = [
     description:
       "Our expert developers build custom software solutions tailored to your business needs, utilizing the latest technologies and best practices to deliver high-quality results.",
     services: [
-      "Web Applications (scalable & responsive",
+      "Web Applications (scalable & responsive)",
       "Mobile Apps (iOS & Android)",
       "Desktop Applications",
       "Custom Software Solutions",
