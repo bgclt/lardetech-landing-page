@@ -15,7 +15,13 @@ import {
 } from "@/assets";
 
 // ---------------- Shared Components ---------------- //
-const Badge = ({ label, className = "" }: { label: string; className?: string }) => (
+const Badge = ({
+  label,
+  className = "",
+}: {
+  label: string;
+  className?: string;
+}) => (
   <span
     className={`rounded-full border px-3 py-1 text-sm font-semibold ${className}`}
   >
@@ -69,7 +75,14 @@ const AvatarGroup = ({ avatars }: { avatars: string[] }) => (
 
 // ---------------- Main Component ---------------- //
 const WorkWithUs = () => {
-  const swiperImages = [DataEngineer, AI, Blockchain, SoftwareDev, Iot, InfraCloud];
+  const swiperImages = [
+    DataEngineer,
+    AI,
+    Blockchain,
+    SoftwareDev,
+    Iot,
+    InfraCloud,
+  ];
 
   const avatars = [
     "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=facearea&facepad=4&w=880&h=880&q=100",
@@ -84,13 +97,22 @@ const WorkWithUs = () => {
         <div className="bg-[#EAE9E9] rounded-[3rem] mx-auto max-w-[85rem] space-y-8 md:space-y-20">
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-5">
             {/* Left Section */}
-            <div className="flex flex-col p-8 rounded-3xl lg:col-span-2" data-aos="fade-right">
+            <div
+              className="flex flex-col p-8 rounded-3xl lg:col-span-2"
+              data-aos="fade-right"
+            >
               <h2 className="text-2xl font-semibold tracking-tight text-gradient gradient-peach">
                 Why work with us & how we work?
               </h2>
               <div className="flex flex-wrap mt-4 gap-2">
-                <Badge label="Creative" className="border-[#376058] text-[#376058]" />
-                <Badge label="Out of the Box" className="border-[#376058] text-[#376058]" />
+                <Badge
+                  label="Creative"
+                  className="border-[#376058] text-[#376058]"
+                />
+                <Badge
+                  label="Out of the Box"
+                  className="border-[#376058] text-[#376058]"
+                />
               </div>
 
               <div className="mt-6 grid lg:grid-cols-2 items-end flex-1 gap-4">
@@ -106,20 +128,35 @@ const WorkWithUs = () => {
             </div>
 
             {/* Right Section */}
-            <div className="rounded-3xl p-4 sm:p-8 lg:col-span-3" data-aos="fade-left">
+            <div
+              className="rounded-3xl p-4 sm:p-8 lg:col-span-3"
+              data-aos="fade-left"
+            >
               <div className="flex w-full flex-wrap lg:flex-nowrap justify-between gap-4">
-                <div className="rounded-[2rem] p-6 bg-white hover:bg-gray-100" data-aos="zoom-in" data-aos-delay="100">
+                <div
+                  className="rounded-[2rem] p-6 bg-white hover:bg-gray-100"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
                   <h5 className="mb-2 text-xl font-semibold tracking-tight text-gray-900">
                     Evolving ideas into their final form through the development
                   </h5>
                   <AvatarGroup avatars={avatars} />
                 </div>
 
-                <div className="mt-6 lg:mt-0 rounded-[2rem] p-6 bg-gradient-to-t from-[#3A90DA] to-[#25BBFD]" data-aos="zoom-in" data-aos-delay="200">
+                <div
+                  className="mt-6 lg:mt-0 rounded-[2rem] p-6 bg-gradient-to-t from-[#3A90DA] to-[#25BBFD]"
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
+                >
                   <h5 className="mb-12 text-xl font-semibold tracking-tight text-white">
-                    Thousands of projects delivered with excellence and precision
+                    Thousands of projects delivered with excellence and
+                    precision
                   </h5>
-                  <Badge label="Team Work" className="border-white text-white" />
+                  <Badge
+                    label="Team Work"
+                    className="border-white text-white"
+                  />
                 </div>
               </div>
 
@@ -129,6 +166,7 @@ const WorkWithUs = () => {
                 loop={true}
                 autoplay={{ delay: 10000, disableOnInteraction: false }}
                 pagination={{ clickable: true }}
+                className="mySwiper"
               >
                 {swiperImages.map((src, i) => (
                   <SwiperSlide key={i}>

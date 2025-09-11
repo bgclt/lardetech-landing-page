@@ -11,6 +11,8 @@
   scroll-behavior: smooth;
 }
 
+
+
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 30px;
   border-radius: 5px;
